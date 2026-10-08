@@ -537,3 +537,37 @@ body {
     font-size: 0.88rem !important;
 }
 
+/* Features label */
+.features-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--success);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.roadmap-label {
+    color: var(--accent-purple);
+}
+
+.roadmap-card {
+    opacity: 0.85;
+    border-style: dashed;
+    position: relative;
+}
+
+.badge-soon {
+    display: inline-block;
+    margin-top: 16px;
+    background: rgba(168, 85, 247, 0.15);
+    color: var(--accent-purple);
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+

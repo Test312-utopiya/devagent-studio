@@ -111,25 +111,52 @@
     <section id="features" class="features-section">
         <div class="container">
             <h2 class="section-title">Built for Modern Engineering Teams</h2>
-            <div class="grid-3">
+
+            <!-- Current Features -->
+            <p class="features-label">✅ Currently Shipping</p>
+            <div class="grid-3" style="margin-bottom: 60px;">
                 <div class="glass-panel card">
                     <div class="card-icon">🧠</div>
-                    <h3>AST Context Indexing</h3>
-                    <p>Parses function signatures, module imports, and typescript interfaces to supply exact token-optimized context to Claude Sonnet endpoints.</p>
+                    <h3>Autonomous Task Execution</h3>
+                    <p>Describe a code change in plain English. DevAgent reads your repository context and modifies the right files automatically using Claude 3.5 Sonnet.</p>
                 </div>
                 <div class="glass-panel card">
+                    <div class="card-icon">🔍</div>
+                    <h3>AI Code Reviewer</h3>
+                    <p>Every git diff is reviewed by Claude — catching security vulnerabilities, performance regressions, and anti-patterns before they reach production.</p>
+                </div>
+                <div class="glass-panel card">
+                    <div class="card-icon">💬</div>
+                    <h3>Codebase Q&A</h3>
+                    <p>Ask any natural language question about your codebase. Claude traces through relevant files and explains logic, bugs, or architecture instantly.</p>
+                </div>
+            </div>
+
+            <!-- Roadmap Features -->
+            <p class="features-label roadmap-label">🚀 Coming Soon</p>
+            <div class="grid-3">
+                <div class="glass-panel card roadmap-card">
                     <div class="card-icon">⚡</div>
-                    <h3>Self-Healing Test Engine</h3>
-                    <p>Automatically executes your local unit tests. If assertions fail, error logs are analyzed by Claude API to iteratively repair patches.</p>
+                    <h3>Self-Healing CI Pipelines</h3>
+                    <p>Claude reads test failure logs and iteratively rewrites code until all CI checks pass green — zero human intervention required.</p>
+                    <span class="badge-soon">In Development</span>
                 </div>
-                <div class="glass-panel card">
+                <div class="glass-panel card roadmap-card">
+                    <div class="card-icon">📝</div>
+                    <h3>PR Description Generator</h3>
+                    <p>Claude reads your git diff and writes complete GitHub pull request titles, descriptions, and changelogs automatically.</p>
+                    <span class="badge-soon">In Development</span>
+                </div>
+                <div class="glass-panel card roadmap-card">
                     <div class="card-icon">🛡️</div>
-                    <h3>Local & Privacy First</h3>
-                    <p>Your full source code never leaves your workstation—only scoped AST diff snippets are processed securely through your own Claude Console keys.</p>
+                    <h3>Dependency Vulnerability Scanner</h3>
+                    <p>Claude analyzes package manifests, flags known CVEs, and recommends patched version upgrades with migration notes.</p>
+                    <span class="badge-soon">Planned</span>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Architecture Section -->
     <section id="architecture" class="arch-section">
