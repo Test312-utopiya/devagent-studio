@@ -14,7 +14,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- CSS Styles -->
     <link rel="stylesheet" href="style.css">
@@ -24,18 +24,18 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <span class="logo-icon">⚡</span>
                 <span class="logo-text">DevAgent<span class="highlight">.Studio</span></span>
+                <span class="logo-badge">PRO</span>
             </a>
             <div class="nav-links">
                 <a href="#features">Features</a>
                 <a href="#architecture">Architecture</a>
-                <a href="#docs">Docs</a>
+                <a href="#quickstart">Quickstart</a>
                 <a href="https://github.com" target="_blank" class="github-badge">
                     <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
                     </svg>
-                    <span>GitHub v0.4.2</span>
+                    <span>v0.4.2 Open-Source</span>
                 </a>
             </div>
         </div>
@@ -43,70 +43,94 @@
 
     <!-- Hero Section -->
     <header class="hero">
-        <div class="container hero-container">
+        <div class="container">
             <div class="hero-tag">
-                <span class="pulse-dot"></span> Open-Source AI Developer Tool
+                <span class="pulse-dot"></span> Open-Source AI Developer Platform
             </div>
             <h1 class="hero-title">
-                Autonomous Software Engineering <br>
-                <span class="gradient-text">Powered by Claude 3.5 APIs</span>
+                Autonomous Code Engineering <br>
+                <span class="gradient-text">Powered by Claude 3.5 Sonnet</span>
             </h1>
             <p class="hero-subtitle">
-                DevAgent Studio connects directly to your codebase to automate pull requests, refactor multi-file architectures, and execute unit testing pipelines with self-healing feedback loops.
+                DevAgent Studio connects directly to your repository to automate pull requests, refactor multi-file architectures, and run self-healing unit test pipelines.
             </p>
             <div class="hero-cta">
-                <a href="#quickstart" class="btn btn-primary">Quick Start CLI</a>
-                <a href="#docs" class="btn btn-secondary">Read Documentation</a>
+                <a href="#quickstart" class="btn btn-primary">Get Started Free</a>
+                <a href="#architecture" class="btn btn-secondary">Explore Architecture</a>
             </div>
         </div>
     </header>
 
-    <!-- Terminal Demo Window -->
-    <section class="demo-section">
+    <!-- Showcase Grid Section -->
+    <section class="showcase-section">
         <div class="container">
-            <div class="terminal-window">
-                <div class="terminal-header">
-                    <div class="terminal-buttons">
-                        <span class="btn-dot red"></span>
-                        <span class="btn-dot yellow"></span>
-                        <span class="btn-dot green"></span>
-                    </div>
-                    <div class="terminal-title">bash — devagent run --task="refactor auth middleware"</div>
+            <div class="showcase-grid">
+                <!-- High Tech Dashboard Mockup -->
+                <div class="glass-panel mockup-container">
+                    <img src="hero-mockup.png" alt="DevAgent Studio AI Diff Dashboard" class="mockup-image">
                 </div>
-                <div class="terminal-body">
-                    <div class="line"><span class="prompt">$</span> devagent init --config=.devagent.json</div>
-                    <div class="line info">[INFO] Connected to DevAgent Core Engine v0.4.2</div>
-                    <div class="line info">[INFO] Analyzing repository AST tree (142 files indexed)...</div>
-                    <div class="line"><span class="prompt">$</span> devagent execute --prompt="Implement OAuth2 JWT refresh logic in src/auth/"</div>
-                    <div class="line success">[CLAUDE 3.5 SONNET] Generating contextual patch...</div>
-                    <div class="line text-dim"> > Modified src/auth/jwt.ts (+42 lines, -12 lines)</div>
-                    <div class="line text-dim"> > Created src/auth/refresh.test.ts</div>
-                    <div class="line info">[TEST RUNNER] Running npm test... 12/12 passed (0.4s)</div>
-                    <div class="line success">✔ PR #48 automatically created: "feat(auth): Add JWT refresh token support"</div>
+
+                <!-- Live CLI Terminal -->
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-dot red"></span>
+                            <span class="btn-dot yellow"></span>
+                            <span class="btn-dot green"></span>
+                        </div>
+                        <div class="terminal-title">bash — devagent run --task="refactor auth middleware"</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="line"><span class="prompt">$</span> devagent init --config=.devagent.json</div>
+                        <div class="line info">[INFO] Connected to DevAgent Engine v0.4.2</div>
+                        <div class="line info">[INFO] Parsing repository AST tree (142 files indexed)...</div>
+                        <div class="line"><span class="prompt">$</span> devagent execute --prompt="Implement OAuth2 JWT refresh logic"</div>
+                        <div class="line success">[CLAUDE 3.5 SONNET] Synthesizing patch...</div>
+                        <div class="line text-dim"> > Modified src/auth/jwt.ts (+42 lines, -12 lines)</div>
+                        <div class="line text-dim"> > Created src/auth/refresh.test.ts</div>
+                        <div class="line info">[TEST RUNNER] Running npm test... 12/12 passed (0.4s)</div>
+                        <div class="line success">✔ PR #48 automatically created: "feat(auth): Add JWT refresh token"</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="glass-panel stats-bar">
+                <div class="stat-item">
+                    <h3>10x</h3>
+                    <p>Faster PR Reviews</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>AST Context Precision</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Zero</h3>
+                    <p>Code Telemetry Leaks</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Grid -->
+    <!-- Features Section -->
     <section id="features" class="features-section">
         <div class="container">
-            <h2 class="section-title">Engineered for Developer Productivity</h2>
-            <div class="grid grid-3">
-                <div class="card">
+            <h2 class="section-title">Built for Modern Engineering Teams</h2>
+            <div class="grid-3">
+                <div class="glass-panel card">
                     <div class="card-icon">🧠</div>
-                    <h3>Deep Context Parsing</h3>
-                    <p>Indexes your entire repository into lightweight tree-sitter AST nodes, allowing Claude API to understand cross-file dependencies effortlessly.</p>
+                    <h3>AST Context Indexing</h3>
+                    <p>Parses function signatures, module imports, and typescript interfaces to supply exact token-optimized context to Claude Sonnet endpoints.</p>
                 </div>
-                <div class="card">
+                <div class="glass-panel card">
                     <div class="card-icon">⚡</div>
-                    <h3>Self-Healing Pipelines</h3>
-                    <p>When tests fail, DevAgent feeds error tracebacks back into Claude Sonnet to iterate on fixes until all continuous integration checks pass green.</p>
+                    <h3>Self-Healing Test Engine</h3>
+                    <p>Automatically executes your local unit tests. If assertions fail, error logs are analyzed by Claude API to iteratively repair patches.</p>
                 </div>
-                <div class="card">
+                <div class="glass-panel card">
                     <div class="card-icon">🛡️</div>
-                    <h3>Enterprise Security</h3>
-                    <p>Local-first agent execution. Your codebase never leaves your workspace—only anonymized AST diffs are processed via Claude API endpoints.</p>
+                    <h3>Local & Privacy First</h3>
+                    <p>Your full source code never leaves your workstation—only scoped AST diff snippets are processed securely through your own Claude Console keys.</p>
                 </div>
             </div>
         </div>
@@ -115,45 +139,42 @@
     <!-- Architecture Section -->
     <section id="architecture" class="arch-section">
         <div class="container">
-            <h2 class="section-title">How DevAgent Integrates LLM APIs</h2>
-            <div class="arch-box">
+            <h2 class="section-title">How DevAgent Leverages LLM APIs</h2>
+            <div class="glass-panel arch-box">
                 <div class="arch-step">
-                    <span class="step-num">1</span>
-                    <h4>Repository Indexing</h4>
-                    <p>Local parser scans codebase for function signatures, types, and module imports.</p>
+                    <div class="step-num">1</div>
+                    <h4>Repository AST Indexing</h4>
+                    <p>Tree-sitter parser indexes codebase functions, dependencies, and type exports.</p>
                 </div>
                 <div class="arch-arrow">➔</div>
                 <div class="arch-step">
-                    <span class="step-num">2</span>
+                    <div class="step-num">2</div>
                     <h4>Claude API Reasoning</h4>
-                    <p>Sends structured JSON prompts to Claude API for multi-turn patch synthesis.</p>
+                    <p>Structured prompts query Claude Sonnet API for complex code synthesis.</p>
                 </div>
                 <div class="arch-arrow">➔</div>
                 <div class="arch-step">
-                    <span class="step-num">3</span>
-                    <h4>Automated Verification</h4>
-                    <p>Runs test suites locally & pushes verified Git commits back to GitHub.</p>
+                    <div class="step-num">3</div>
+                    <h4>CI/CD Auto Verification</h4>
+                    <p>Executes local test runner & automatically opens verified GitHub PRs.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Quickstart Code Section -->
+    <!-- Quickstart Section -->
     <section id="quickstart" class="code-section">
         <div class="container">
-            <h2 class="section-title">Get Started in 30 Seconds</h2>
+            <h2 class="section-title">Get Started in Seconds</h2>
             <div class="code-box">
                 <pre><code><span class="comment"># Install DevAgent CLI globally via npm</span>
 npm install -g @devagent-studio/cli
 
-<span class="comment"># Export your Claude API Key</span>
+<span class="comment"># Configure your Claude API Key</span>
 export ANTHROPIC_API_KEY="your-claude-api-key"
 
-<span class="comment"># Initialize in your repository</span>
-devagent init
-
-<span class="comment"># Launch autonomous task</span>
-devagent run --task "Add unit tests for user controller"</code></pre>
+<span class="comment"># Launch autonomous task in your repo</span>
+devagent run --task "Add unit tests for user authentication"</code></pre>
             </div>
         </div>
     </section>
